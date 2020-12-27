@@ -1,0 +1,16 @@
+* Creative Stream Pair Programming
+
+Story: Inspired by "Who's That Pokemon?!" and the Cowboy Bebop Theme make an interactive animation that will respond to user interactions to make a silhouette that reveals a new pokemon when a new user follows. "Who's that new follower?"
+
+https://www.youtube.com/watch?v=gOLXYAlC-R8&t=518s
+
+Declarative "Tests" Day 1.
+1. There is a web page.
+2. There is a container for the visual elements.
+3. Inside that container, there's an image.
+4. The image should be centered vertically and horizontally in the viewport.
+5. Scale the image relative to the viewport
+6. There are multiple images that can be swapped into the DOM.
+7. There should be a button that causes:
+  - The image to appear in silhouette
+  - The image to fade in

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style>
+	  * {
+	    border : 1px dashed red;
+	  }
+	
+	  .container {
+	    height : 100vh;
+	    width : 100vw;
+	    position : relative;
+		  }
+	  
+	  img {
+	    position : absolute;
+	    margin-left: 0;
+	    margin-top: 0;
+	    height : auto;
+	    width : 100%;
+	    display : block;
+	  }
+	  
+	  img.hidden {
+	    animation-name: reveal;
+	    animation-duration: 12s;
+	  }
+
+	  @keyframes reveal {
+	  	0% { opacity : 0; filter: brightness(0%); }
+	  	33% { opacity : 0; filter: brightness(0%); }
+	  	33.001% { opacity : 1; filter: brightness(0%); }
+	  	
+	  	66% { filter: brightness(0%);}
+	  	100% { filter: brightness(100%); }
+	  }
+	  
+	</style>
+</head>
+<body>
+  <div class="container">
+<!--     <img src="https://marthahipley.com/img/img/vileplume.png">
+ -->    <img src="https://marthahipley.com/img/pikachu.png">
+  </div>	
+  
+  <script>
+    document.addEventListener("click", () =>
+      {
+        const hidden = "hidden";
+        const img = document.querySelector(".container img");
+        img.classList.remove(hidden);
+        setTimeout(() => img.classList.add(hidden), 1000);
+       
+      });
+  </script>
+</body>
+</html>
